@@ -76,7 +76,7 @@
     "test": "npm-run-all lint dist js-test docs-build docs-lint",
     "netlify": "npm-run-all dist release-sri docs-production",
     "watch": "npm-run-all --parallel watch-*",
-    "watch-css-main": "chokidar \"scss/**/*.scss\" --command \"npm run css-main\"",
+    "watch-css-main": "chokidar \"scss/**/*.scss\" --initial --command \"npm run css-main\"",
     "watch-css-docs": "chokidar \"site/static/**/assets/scss/**/*.scss\" --initial --command \"npm run css-docs\"",
     "watch-js-main": "chokidar \"js/src/**/*.js\" --initial --command \"npm run js-compile\"",
     "watch-js-docs": "chokidar \"site/static/**/assets/js/src/**/*.js\" --initial --command \"npm run js-docs\""
